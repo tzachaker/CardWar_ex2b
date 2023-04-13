@@ -2,7 +2,7 @@
 #include "player.hpp"
 #include <string>
 #include <iostream>
-#include <algorithm>    //random_shuffle
+#include <algorithm>    //random_shuffle -> https://cplusplus.com/reference/algorithm/random_shuffle/
 #include <vector>       
 #include <ctime>        
 #include <cstdlib>      
@@ -191,7 +191,7 @@ namespace ariel{
 
         void Game::printLastTurn()
     {
-            // cout <<"The last turn is : \n"<< lastTurn ;
+             cout <<"The last turn is : \n"<< lastTurn ;
     }
     void Game::playAll()
     {
@@ -211,24 +211,24 @@ namespace ariel{
     {
         if (player1.cardesTaken()>player2.cardesTaken())
         {
-            // cout <<"The winner is : \n" <<player1.getName();
+             cout <<"The winner is : \n" <<player1.getName();
         }
         else if (player1.cardesTaken()<player2.cardesTaken())
         {
-            // cout <<"The winner is : \n" <<player2.getName();
+             cout <<"The winner is : \n" <<player2.getName();
         }
         else
         {
-            // cout<<"A tie between " <<player1.getName()<< "to" <<player2.getName()<< "\n"<<endl;
+             cout<<"A tie between " <<player1.getName()<< "to" <<player2.getName()<< "\n"<<endl;
         }
     }
     void Game::printLog()
     {
-        // cout <<"The log is : "<< turnsLog << "\n"<< endl;
+         cout <<"The log is : "<< turnsLog << "\n"<< endl;
     }
     void Game::printStats()
     {
-    //    cout <<player1.getName()<< "has" <<player1.cardesTaken()<< " cards and " <<player2.getName()<< "has" <<player2.cardesTaken()<< "cards \n"<< endl;
+        cout <<player1.getName()<< "has" <<player1.cardesTaken()<< " cards and " <<player2.getName()<< "has" <<player2.cardesTaken()<< "cards \n"<< endl;
     // It can also show numOfTurns, ties ...
     }
 }
